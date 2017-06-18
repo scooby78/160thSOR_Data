@@ -106,4 +106,50 @@ class cfgVehicles
 			};			
 		};
 	};
+	class UserTexture1m_F;
+	class UserTexture10m: UserTexture1m_F
+	{
+		displayName = "10x10 Board (Briefing)";
+		editorCategory = "SOR_Cat_Training";
+		editorSubcategory = "SOR_SubCat_Trining_Objects";
+		vehicleClass = "SOR_Training";
+		mapSize = 10;		
+		model = "\A3\Misc_F\Helpers\UserTexture10m.p3d";
+		hiddenSelections[] = {"usertexture"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Civ\InfoBoards\Data\MapBoard_Default_CO.paa"};		
+		class UserActions 
+		{
+			class Air
+			{
+				displayName = "<t color='#F088ff'>Begin Airborne Training Brief</t>";
+				priority = 8;
+				showWindow = 0;
+				hideOnUse = true;
+				radius= 2;
+				position = "";
+				onlyForPlayer = 1;
+				shortcut = "";				
+				condition = "Alive(this) && player isKindOf 'SOR_AirCommand_D'";
+				statement = "[this] spawn SOR_fnc_AirSlideShow";
+			};
+			class Inf: Air
+			{
+				displayName = "Begin Infrantry Training Brief";
+				condition = "Alive(this) && player isKindOf 'SOR_Commander_D'";
+				statement = "[this] spawn SOR_fnc_SlideShow";
+			};
+			class Mech: Air
+			{
+				displayName = "Begin Mechanised Training Brief";
+				condition = "Alive(this) && player isKindOf 'SOR_MechCommand_D'";
+				statement = "[this] spawn SOR_fnc_SlideShow";
+			};
+			class Mission: Air
+			{
+				displayName = "Begin Mission Brief";
+				condition = "Alive(this) && player isKindOf 'SOR_ZeusCommand_D'";
+				statement = "[this] spawn SOR_fnc_SlideShow";
+			};			
+		};
+	};
 };
