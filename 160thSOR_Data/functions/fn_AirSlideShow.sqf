@@ -112,6 +112,9 @@ wboard addAction [("<t color='#16e616'>" + ("Next Slide10") + "</t>"),"[wboard s
 wboard addAction [("<t color='#16e616'>" + ("Next Slide11") + "</t>"),"[wboard setObjectTextureGlobal [0, '160thSOR_Data\air\adv_heli_cas\Slide11.jpg']];SOR_SLIDESHOW = SOR_SLIDESHOW + 1; ","",1,true,true,"","((_target distance _this) < 5 && (SOR_AHCT > 0) && (SOR_SLIDESHOW == 10))"];
 wboard addAction [("<t color='#16e616'>" + ("Next Slide12") + "</t>"),"[wboard setObjectTextureGlobal [0, '160thSOR_Data\air\adv_heli_cas\Slide12.jpg']];SOR_SLIDESHOW = SOR_SLIDESHOW + 1; ","",1,true,true,"","((_target distance _this) < 5 && (SOR_AHCT > 0) && (SOR_SLIDESHOW == 11))"];
 wboard addAction [("<t color='#16e616'>" + ("Next Slide13") + "</t>"),"[wboard setObjectTextureGlobal [0, '160thSOR_Data\air\adv_heli_cas\Slide13.jpg']];SOR_SLIDESHOW = SOR_SLIDESHOW + 1; ","",1,true,true,"","((_target distance _this) < 5 && (SOR_AHCT > 0) && (SOR_SLIDESHOW == 12))"];
+wboard addAction [("<t color='#16e616'>" + ("Next Slide14") + "</t>"),"[wboard setObjectTextureGlobal [0, '160thSOR_Data\air\adv_heli_cas\Slide14.jpg']];SOR_SLIDESHOW = SOR_SLIDESHOW + 1; ","",1,true,true,"","((_target distance _this) < 5 && (SOR_AHCT > 0) && (SOR_SLIDESHOW == 13))"];
+wboard addAction [("<t color='#16e616'>" + ("Next Slide15") + "</t>"),"[wboard setObjectTextureGlobal [0, '160thSOR_Data\air\adv_heli_cas\Slide15.jpg']];SOR_SLIDESHOW = SOR_SLIDESHOW + 1; ","",1,true,true,"","((_target distance _this) < 5 && (SOR_AHCT > 0) && (SOR_SLIDESHOW == 14))"];
+wboard addAction [("<t color='#16e616'>" + ("Next Slide16") + "</t>"),"[wboard setObjectTextureGlobal [0, '160thSOR_Data\air\adv_heli_cas\Slide16.jpg']];SOR_SLIDESHOW = SOR_SLIDESHOW + 1; ","",1,true,true,"","((_target distance _this) < 5 && (SOR_AHCT > 0) && (SOR_SLIDESHOW == 15))"];
 
 /*
 // Basic Fixed Wing CAS Training Powerpoint
