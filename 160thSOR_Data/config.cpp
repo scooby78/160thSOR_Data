@@ -10,7 +10,7 @@ class CfgPatches {
 	{
 		author="160th SOR";
 		url="http://www.160th.net";
-		version="1.0";
+		version="1.0.2";
 		requiredAddons[] = 
 		{
 			"160th_SOR_Loadouts"
@@ -65,15 +65,16 @@ class CfgVehicleClasses
 
 class cfgVehicles 
 {	 
-	class Land_MapBoard_F;
-	class SOR_BriefingBoard: Land_MapBoard_F
+	class Land_TripodScreen_01_large_F;
+//	class Land_MapBoard_F;
+	class SOR_BriefingBoard: Land_TripodScreen_01_large_F
 	{
-		displayName = "Whiteboard (Briefing)";
+		displayName = "Briefing Screen";
 		editorCategory = "SOR_Cat_Training";
 		editorSubcategory = "SOR_SubCat_Trining_Objects";
 		vehicleClass = "SOR_Training";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\A3\Structures_F\Civ\InfoBoards\Data\MapBoard_Default_CO.paa"};
+//		hiddenSelections[] = {"camo"};
+//		hiddenSelectionsTextures[] = {"\A3\Structures_F\Civ\InfoBoards\Data\MapBoard_Default_CO.paa"};
 		class UserActions 
 		{
 			class Air

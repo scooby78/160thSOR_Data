@@ -142,4 +142,4 @@ wboard addAction [("<t color='#16e616'>" + ("Next Slide22") + "</t>"),"[wboard s
 
 // Utility Controls
 wboard addAction [("<t color='#FFA700'>" + ("Previous Slide") + "</t>"),"SOR_SLIDESHOW = SOR_SLIDESHOW - 2; ","",1,true,true,"","((_target distance _this) < 5 && (SOR_SLIDESHOW > 1))"];
-wboard addAction [("<t color='#FF0000'>" + ("End Powerpoint") + "</t>"),"[wboard setObjectTextureGlobal [0, 'a3\structures_f\civ\infoboards\data\mapboard_default_co.paa']];SOR_SLIDESHOW = -1;SOR_ACT = 0;SOR_BHT = 0;SOR_BFWT = 0;SOR_BPJOT = 0;SOR_AHCT = 0;SOR_BFWCT = 0;SOR_AFWCT = 0; removeAllActions wboard;","",1,true,true,"","((_target distance _this) < 5 && (SOR_SLIDESHOW > 0))"];
+wboard addAction [("<t color='#FF0000'>" + ("End Powerpoint") + "</t>"),"[wboard setObjectTextureGlobal [0, '#(argb,8,8,3)color(0,0,0,0.0,co)']];SOR_SLIDESHOW = -1;SOR_ACT = 0;SOR_BHT = 0;SOR_BFWT = 0;SOR_BPJOT = 0;SOR_AHCT = 0;SOR_BFWCT = 0;SOR_AFWCT = 0; removeAllActions wboard;","",1,true,true,"","((_target distance _this) < 5 && (SOR_SLIDESHOW > 0))"];
